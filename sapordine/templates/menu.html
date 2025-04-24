@@ -1,0 +1,26 @@
+{% extends "masterpage.html" %}
+{% block body %}
+<center>
+<div class="menu"> 
+  <!-- Menu Title -->
+    <div class="section-title" data-aos="fade-up">
+      <h2 class="menu-title">Our Menu</h2>
+      <h6><span>Check Our</span> <span class="description-title">Delicious Menu</span></h6>
+    </div>
+  <!-- End Section Title --> 
+  <div class="row">
+   {% for x in Menu %}
+      <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="{{x.image.url}}" class="card-img-top" alt="loading" width="80px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">{{x.name}}</h5>
+              <p class="card-text">Rs{{x.price}}</p>
+              <a href="#" class="btn btn-danger">Add to Cart</a>
+            </div>
+          </div>
+      </div>
+    {% endfor %}
+  </div>
+</center>
+{% endblock %}

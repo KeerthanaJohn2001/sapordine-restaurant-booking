@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("#dropdownMenuLink").click(function(){
+        $('.dropdown-menu').toggle();
+    });
+});
+$(document).ready(function(){
+    $('.navbar-toggler').click(function(){
+        $('.navbar-collapse').toggle();
+    });
+});

@@ -1,0 +1,4 @@
+*.pyc  
+*~  
+sapordinepro/__pycache__
+myvenv
